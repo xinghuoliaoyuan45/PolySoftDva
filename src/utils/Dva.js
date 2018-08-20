@@ -15,7 +15,7 @@ export default (options) => {
 
 	const store = app._store;
 
-	app.start = (container) => () => <Provider store={store}>{container}</Provider>;// 注意是两层 在 App.js start
+	app.start = (container) => () => <Provider store={store}>{container}</Provider>;// 注意是两层 在 AppModel.js start
 
 	app.getStore = () => store;
 
